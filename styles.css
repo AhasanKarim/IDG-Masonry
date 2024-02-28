@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 1em;
   background: #eee;
   transition: background-color 0.5s ease;
+
 }
 
 #navbar {
@@ -10,10 +11,10 @@ body {
   top: 0;
   width: 100%;
   background-color: #f8f9fa;
-  z-index: 1000; /* Ensure navbar stays above other content */
-  transition: top 0.3s; /* Smooth transition for showing/hiding navbar */
-  padding: 10px 0; /* Add some padding for aesthetics */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
+  z-index: 1000; 
+  transition: top 0.3s; 
+  padding: 10px 0; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
 
@@ -25,6 +26,7 @@ body {
 .masonry-gallery {
   column-count: 4;
   column-gap: 1em;
+  row-gap: 1em;
   margin: 50px auto;
   transition: all 0.5s ease;
 }
@@ -49,9 +51,9 @@ body {
   top: 18px;
   right: 18px;
   display: inline-block;
-  width: 60px; /* Default size */
-  height: 34px; /* Default size */
-  /* Other styles */
+  width: 60px; 
+  height: 34px; 
+  
 }
 
 .switch input { 
@@ -98,7 +100,7 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
+
 .slider.round {
   border-radius: 34px;
 }
@@ -107,7 +109,20 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/* Responsive columns for different device sizes */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #d2cfcf;
+  font-size: 0.8em;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Media Files */
 @media (max-width: 1200px) {
   .masonry-gallery {
     column-count: 3;
@@ -126,10 +141,10 @@ input:checked + .slider:before {
   }
 }
 
-/* Tablets and below */
+
 @media (max-width: 768px) {
 .switch {
-  width: 50px; /* Slightly smaller */
+  width: 50px; 
   height: 28px;
 }
 .slider:before {
@@ -138,10 +153,10 @@ input:checked + .slider:before {
 }
 }
 
-/* Large smartphones */
+
 @media (max-width: 600px) {
 .switch {
-  width: 45px; /* Further reduced */
+  width: 45px; 
   height: 25px;
 }
 .slider:before {
@@ -150,10 +165,9 @@ input:checked + .slider:before {
 }
 }
 
-/* Small smartphones */
 @media (max-width: 400px) {
 .switch {
-  width: 40px; /* Smallest size for very small devices */
+  width: 40px; 
   height: 22px;
 }
 .slider:before {
