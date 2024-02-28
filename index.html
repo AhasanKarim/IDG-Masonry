@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masonry Image Gallery with Night Mode</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function toggleNightMode() {
+      var element = document.body;
+      element.classList.toggle("night-mode");
+    }
+  </script>
+</head>
+<body>
+  <label class="switch">
+    <input type="checkbox" onchange="toggleNightMode()">
+    <span class="slider round"></span>
+  </label>
+  
+  <div class="masonry-gallery">
+    <!-- Add your images here -->
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masonry Image Gallery with Night Mode</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <label class="switch">
+    <input type="checkbox" onchange="toggleNightMode()">
+    <span class="slider round"></span>
+  </label>
+  
+  <div class="masonry-gallery">
+    <img src="/resources/DSC07493.JPG" alt="Image 1">
+    <img src="/resources/DSC07531.JPG" alt="Image 1">
+    <img src="/resources/DSC07950.JPG" alt="Image 2">
+    <img src="/resources/DSC08044.JPG" alt="Image 3">
+    <img src="/resources/IMG_1757.JPG" alt="Image 4">
+    <img src="/resources/IMG_1760.JPG" alt="Image 5">
+  </div>
+</body>
+<script src="scripts.js"></script>
+</html>
