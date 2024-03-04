@@ -121,6 +121,71 @@ footer p {
   padding: 0;
 }
 
+/* Footer specific styles adapted from provided project */
+.max-w-screen-xl {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.py-16 {
+  padding-top: 4rem; /* Adjust the padding to fit your design */
+  padding-bottom: 4rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-gray-600 {
+  color: #4a5568;
+}
+
+.dark:text-gray-300 {
+  color: #d2d6dc;
+}
+
+.space-x-6 > * + * {
+  margin-left: 1.5rem;
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+.hover:opacity-75:hover {
+  opacity: 0.75;
+}
+
+
 
 /* Media Files */
 @media (max-width: 1200px) {
